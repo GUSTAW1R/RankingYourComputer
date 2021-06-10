@@ -7,11 +7,11 @@ using System.Windows;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набор атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("RankingYourComputer")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Ranking Your Computer")]
+[assembly: AssemblyDescription("Приложение для работы с физической и виртуальными конфигурациями")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RankingYourComputer")]
+[assembly: AssemblyCompany("Romanov 'GUSTAW1R' Rustam")]
+[assembly: AssemblyProduct("Ranking Your Computer")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
