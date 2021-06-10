@@ -1,0 +1,258 @@
+﻿<Window x:Class="RankingYourComputer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RankingYourComputer"
+        mc:Ignorable="d"
+        Title="Главный экран" Height="650" Width="1200" MinHeight="600" MinWidth="1125" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Control.FontFamily" Value="Arial Black"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+        </Style>
+        <Style TargetType="GroupBox">
+            <Setter Property="Control.FontFamily" Value="Arial Black"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#76d1e7" />
+            <Setter Property="Control.FontFamily" Value="Arial"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="BorderBrush" Value="#5dacd6"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Control.FontFamily" Value="Arial"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Control.FontFamily" Value="Arial"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="25"/>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Background="#67c5f3">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.7*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.7*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.7*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.7*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.7*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="1.25*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1.25*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="1.5*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="1.25*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="1.5*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <GroupBox Grid.Column="1" Grid.Row="1" Grid.RowSpan="19" Grid.ColumnSpan="10" Header="Текущая конфигурация ПК"/>
+        <Label Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="3" Content="Название:"/>
+        <TextBox x:Name="physicalName" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="7"/>
+        <Image Grid.Column="2" Grid.Row="5" Grid.RowSpan="2" Height="40" Width="40" Source="CPU.png" MouseDown="questionCPU"/>
+        <Image Grid.Column="2" Grid.Row="8" Grid.RowSpan="2" Height="40" Width="40" Source="GPU.png" MouseDown="questionGPU"/>
+        <Image Grid.Column="2" Grid.Row="11" Grid.RowSpan="2" Height="40" Width="40" Source="RAM.png" MouseDown="questionRAM"/>
+        <Image Grid.Column="2" Grid.Row="14" Grid.RowSpan="2" Height="40" Width="40" Source="HardDisk.png" MouseDown="questionHARD"/>
+        <Image Grid.Column="2" Grid.Row="17" Grid.RowSpan="2" Height="40" Width="40" Source="OS.png" MouseDown="questionOS"/>
+        <Label Grid.Column="3" Grid.Row ="5" Grid.ColumnSpan="3" Content="Процессор"/>
+        <Label Grid.Column="3" Grid.Row ="8" Grid.ColumnSpan="4" Content="Видеокарта"/>
+        <Label Grid.Column="3" Grid.Row ="11" Grid.ColumnSpan="6" Content="Оперативная память"/>
+        <Label Grid.Column="3" Grid.Row ="14" Grid.ColumnSpan="4" Content="Жeсткий диск"/>
+        <Label Grid.Column="3" Grid.Row ="17" Grid.ColumnSpan="8" Content="Операционная система"/>
+        <TextBox x:Name="cpuPhys" Grid.Column="3" Grid.Row="6" Grid.ColumnSpan="7"/>
+        <TextBox x:Name="gpuPhys" Grid.Column="3" Grid.Row="9" Grid.ColumnSpan="7"/>
+        <TextBox x:Name="ramPhys" Grid.Column="3" Grid.Row="12" Grid.ColumnSpan="7"/>
+        <TextBox x:Name="hardPhys" Grid.Column="3" Grid.Row="15" Grid.ColumnSpan="7"/>
+        <TextBox x:Name="osPhys" Grid.Column="3" Grid.Row="18" Grid.ColumnSpan="7"/>
+        <Button Grid.Column="13" Grid.Row ="2" Grid.RowSpan="2" Grid.ColumnSpan="3" Click="addVirtualPC" >
+            <ContentPresenter Content="Ввести вручную">
+                <ContentPresenter.ContentTemplate>
+                    <DataTemplate>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center" Text="{Binding}" TextWrapping="Wrap"  />
+                    </DataTemplate>
+                </ContentPresenter.ContentTemplate>
+            </ContentPresenter>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Grid.Column="17" Grid.Row ="2" Grid.RowSpan="2" Grid.ColumnSpan="4" Click="importVirtualPC">
+            <ContentPresenter Content="Импорт из XML файла">
+                <ContentPresenter.ContentTemplate>
+                    <DataTemplate>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center" Text="{Binding}" TextWrapping="Wrap"  />
+                    </DataTemplate>
+                </ContentPresenter.ContentTemplate>
+            </ContentPresenter>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <GroupBox Grid.Column="12" Grid.Row="1" Grid.RowSpan="22" Grid.ColumnSpan="10" Header="Виртуальная конфигурация ПК"/>
+        <Label Grid.Column="13" Grid.Row="5" Grid.ColumnSpan="3" Content="Название:"/>
+        <ComboBox x:Name="virtualName" Grid.Column="13" Grid.Row="6" Grid.ColumnSpan="7" SelectionChanged="virtualName_SelectionChanged"/>
+        <Image Grid.Column="13" Grid.Row="8" Grid.RowSpan="2" Height="40" Width="40" Source="CPU.png" MouseDown="questionCPU1"/>
+        <Image Grid.Column="13" Grid.Row="11" Grid.RowSpan="2" Height="40" Width="40" Source="GPU.png" MouseDown="questionGPU1"/>
+        <Image Grid.Column="13" Grid.Row="14" Grid.RowSpan="2" Height="40" Width="40" Source="RAM.png" MouseDown="questionRAM1"/>
+        <Image Grid.Column="13" Grid.Row="17" Grid.RowSpan="2" Height="40" Width="40" Source="HardDisk.png" MouseDown="questionHARD1"/>
+        <Image Grid.Column="13" Grid.Row="20" Grid.RowSpan="2" Height="40" Width="40" Source="OS.png" MouseDown="questionOS1"/>
+        <Label Grid.Column="14" Grid.Row ="8" Grid.ColumnSpan="3" Content="Процессор"/>
+        <Label Grid.Column="14" Grid.Row ="11" Grid.ColumnSpan="4" Content="Видеокарта"/>
+        <Label Grid.Column="14" Grid.Row ="14" Grid.ColumnSpan="6" Content="Оперативная память"/>
+        <Label Grid.Column="14" Grid.Row ="17" Grid.ColumnSpan="4" Content="Жeсткий диск"/>
+        <Label Grid.Column="14" Grid.Row ="20" Grid.ColumnSpan="8" Content="Операционная система"/>
+        <TextBox x:Name="cpuVirt" Grid.Column="14" Grid.Row="9" Grid.ColumnSpan="7"/>
+        <TextBox x:Name="gpuVirt" Grid.Column="14" Grid.Row="12" Grid.ColumnSpan="7"/>
+        <TextBox x:Name="ramVirt" Grid.Column="14" Grid.Row="15" Grid.ColumnSpan="7"/>
+        <TextBox x:Name="hardVirt" Grid.Column="14" Grid.Row="18" Grid.ColumnSpan="7"/>
+        <TextBox x:Name="osVirt" Grid.Column="14" Grid.Row="21" Grid.ColumnSpan="7"/>
+        <Button Grid.Column="3" Grid.Row ="21" Grid.ColumnSpan="6" Grid.RowSpan="2" Click="getResultRating">
+            <ContentPresenter Content="Получить рейтинг конфигурации ПК">
+                <ContentPresenter.ContentTemplate>
+                    <DataTemplate>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center" Text="{Binding}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ContentPresenter.ContentTemplate>
+            </ContentPresenter>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <GroupBox Grid.Column="23" Grid.Row="1" Grid.RowSpan="20" Grid.ColumnSpan="8" Header="Дополнительно"/>
+        <Button Grid.Column="24" Grid.Row ="3" Grid.RowSpan="3" Grid.ColumnSpan="6" Click="compareWithGame">
+            <ContentPresenter Content="Сравнить с системными требованиями видеоигр">
+                <ContentPresenter.ContentTemplate>
+                    <DataTemplate>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center" Text="{Binding}" TextWrapping="Wrap"  />
+                    </DataTemplate>
+                </ContentPresenter.ContentTemplate>
+            </ContentPresenter>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Grid.Column="24" Grid.Row ="8" Grid.RowSpan="3" Grid.ColumnSpan="6" Click="compareWithPC">
+            <ContentPresenter Content="Сравнить конфигурации ПК">
+                <ContentPresenter.ContentTemplate>
+                    <DataTemplate>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center" Text="{Binding}" TextWrapping="Wrap"  />
+                    </DataTemplate>
+                </ContentPresenter.ContentTemplate>
+            </ContentPresenter>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Grid.Column="24" Grid.Row ="13" Grid.RowSpan="3" Grid.ColumnSpan="6" Click="estimatePC">
+            <ContentPresenter Content="Качественная оценка конфигурации ПК">
+                <ContentPresenter.ContentTemplate>
+                    <DataTemplate>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center" Text="{Binding}" TextWrapping="Wrap"  />
+                    </DataTemplate>
+                </ContentPresenter.ContentTemplate>
+            </ContentPresenter>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Grid.Column="24" Grid.Row ="18" Grid.RowSpan="2" Grid.ColumnSpan="6" Click="exportPC">
+            <ContentPresenter Content="Экспорт конфигурации ПК">
+                <ContentPresenter.ContentTemplate>
+                    <DataTemplate>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center" Text="{Binding}" TextWrapping="Wrap"  />
+                    </DataTemplate>
+                </ContentPresenter.ContentTemplate>
+            </ContentPresenter>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Grid.Column="23" Grid.Row ="22" Grid.ColumnSpan="4" Content="О программе" Click="Settings">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Grid.Column="28" Grid.Row ="22" Grid.ColumnSpan="3" Content="Выход" Click="Exit">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
