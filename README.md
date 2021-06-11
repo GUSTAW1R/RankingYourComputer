@@ -23,6 +23,7 @@ Ranking Your Computer - это приложение, которое служит
 Если у вас не установлены данные компоненты/установлены более ранние версии то необходимо установить/обновить данные компоненты.
 
 Ссылки на скачивание:
+
 NetFramework: https://dotnet.microsoft.com/download/dotnet-framework/net48
 
 Windows Management Framework 5.1 (включает в себя PowerShell версии 5.1): https://www.microsoft.com/en-us/download/details.aspx?id=54616
