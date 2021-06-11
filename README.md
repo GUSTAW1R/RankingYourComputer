@@ -28,3 +28,6 @@ Ranking Your Computer - это приложение, которое служит
 NetFramework: https://dotnet.microsoft.com/download/dotnet-framework/net48
 
 Windows Management Framework 5.1 (включает в себя PowerShell версии 5.1): https://www.microsoft.com/en-us/download/details.aspx?id=54616
+
+Чтобы установить приложение на компьютер и использовать его, перейдите во вкладку "Release" или по следующий ссылке:
+https://github.com/GUSTAW1R/RankingYourComputer/releases/tag/v1.0.0
