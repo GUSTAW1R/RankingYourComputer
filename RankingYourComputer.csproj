@@ -275,6 +275,9 @@
   <ItemGroup>
     <Resource Include="Views\CPU.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dictionary.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

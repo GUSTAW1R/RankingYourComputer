@@ -157,7 +157,7 @@ namespace RankingYourComputer.Controllers
             return result;
         }
 
-        public List<string> Resunt()
+        public List<string> Result()
         {
             List<string> result = new List<string>();
             result.AddRange(GetDescribeOS(GetDescribeHARD(GetDescribeRAM(GetDescribeGPU(GetDescribeCPU())))));

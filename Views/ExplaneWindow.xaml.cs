@@ -35,7 +35,7 @@ namespace RankingYourComputer.Views
         private void Explane(object sender, RoutedEventArgs e)
         {
             ExplaneController explane = new ExplaneController(computer.GetComputer(namePC.SelectedItem.ToString()));
-            explaneCPU.ItemsSource = explane.Resunt();
+            explaneCPU.ItemsSource = explane.Result();
         }
     }
 }
