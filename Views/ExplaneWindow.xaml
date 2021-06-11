@@ -83,12 +83,12 @@
                 </Style>
             </ListBox.Resources>
         </ListBox>
-        <ListBox x:Name="explaneGPU" Grid.Row="4" Grid.Column="1" Grid.RowSpan="8" Grid.ColumnSpan="8">
+        <!--<ListBox x:Name="explaneGPU" Grid.Row="4" Grid.Column="1" Grid.RowSpan="8" Grid.ColumnSpan="8">
             <ListBox.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
             </ListBox.Resources>
-        </ListBox>
+        </ListBox>-->
     </Grid>
 </Window>
